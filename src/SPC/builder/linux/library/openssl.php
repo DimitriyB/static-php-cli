@@ -67,6 +67,7 @@ class openssl extends LinuxLibraryBase
             ->execWithEnv(
                 "{$env} ./Configure no-shared {$extra} " .
                 '--prefix=/ ' .
+                '--openssldir=/etc/officemap/ssl ' .
                 '--libdir=lib ' .
                 '-static ' .
                 "{$zlib_extra}" .
